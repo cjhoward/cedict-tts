@@ -1,6 +1,6 @@
 # CEDICT TTS
 
-This repository contains Baidu Speech-generated TTS MP3s for all entries in the CC-CEDICT Chinese-English dictionary, as well as the Python script and dictionary file used to generate them. The `male` and `female` directories contain the generated MP3s in male and female voices, respectively.
+This repository contains Baidu Speech-generated TTS MP3s for all entries in the CC-CEDICT Chinese-English dictionary, as well as the Python script and dictionary file used to generate them. The `male` and `female` directories contain the generated MP3s in female (0) and male (1) voices, respectively. All MP3s were generated using the default speed (5), pitch (5), and volume (5). Higher quality audio can be obtained by changing the encoding to WAV and regenerating the audio.
 
 ## Audio Usage
 
