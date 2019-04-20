@@ -10,7 +10,7 @@ To get the correct pronunciation for words with '一' and '不', ensure that you
 
 ### Anki
 
-This data is particularly useful when creating Anki flashcards. First, copy all audio files from the `male` or `female` directory to your Anki media folder. Then, provided that your card has a `pinyin` field, insert the line `[sound:{{pinyin}}.mp3]` to your card template to automatically add pronunciation audio to all cards.
+This data is particularly useful when creating Anki flashcards. First, copy all audio files from either the `female` or `male` directory to your Anki media folder. Then, provided that your card has a `pinyin` field, insert the line `[sound:{{pinyin}}.mp3]` to your card template to automatically add pronunciation audio to all cards.
 
 ## Script Usage
 
