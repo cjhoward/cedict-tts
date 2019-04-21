@@ -152,11 +152,10 @@ with open ('cedict_ts.u8') as file:
 		pinyin = correct_tones(word, pinyin)
 
 		# Append word and pinyin to the list
-		words.append({word, pinyin})
+		words.append(tuple((word, pinyin)))
 
 # Init Baidu speech client
 client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
-
 
 for word, pinyin in words:
 	# Split pinyin into syllables
@@ -184,11 +183,12 @@ for word, pinyin in words:
 			if not isinstance(result, dict) and len(result) != 324:
 				with open(filename, 'wb') as file:
 					file.write(result)
-					#print('"' + script + '": ' + filename)
+					print('"' + script + '": ' + filename)
 			else:
 				print('Failed to perform TTS for "' + script + '"')
 			break
 		except:
 			client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
 			continue
+
 
