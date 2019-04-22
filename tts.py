@@ -9,7 +9,7 @@ SECRET_KEY = sys.argv[3]
 speed = 5 # 0-15, default is 5
 pitch = 5 # 0-15, default is 5
 volume = 5 # 0-15, default is 5
-person = 1 # 0 = female, 1 = male
+person = 0 # 0 = female, 1 = male
 encoding = 3 # 3 = mp3, 4 = pcm-16k, 5 = pcm-8k, 6=wav
 extension = '.wav'
 if encoding == 3:
