@@ -1,6 +1,6 @@
 # CEDICT TTS
 
-This repository contains Baidu Speech-generated TTS MP3s for all entries in the CC-CEDICT Chinese-English dictionary, along with the Python script and CC-CEDICT dictionary file used to generate them. The `female` and `male` directories contain the generated MP3s in female (0) and male (1) voices, respectively. All MP3s were generated using the default speed (5), pitch (5), and volume (5). Higher quality audio can be obtained by changing the encoding to WAV and regenerating the audio.
+This repository contains Baidu Speech-generated TTS MP3s for (nearly) all entries in the CC-CEDICT Chinese-English dictionary, along with the Python script and CC-CEDICT dictionary file used to generate them. The `female` and `male` directories contain the generated MP3s in female (0) and male (1) voices, respectively. All MP3s were generated using the default speed (5), pitch (5), and volume (5). Higher quality audio can be obtained by changing the encoding to WAV and regenerating the audio.
 
 ## Audio Usage
 
@@ -21,3 +21,12 @@ After you have been issued an API key, copy down your app ID, API key, and secre
     python3 tts.py <app ID> <API key> <secret key>
 
 This will generate MP3s for all entries in the `cedict_ts.u8` file. Feel free to edit the script manually to change the speed, pitch, volume, person, and encoding parameters as desired. See the [Baidu TTS REST API](http://ai.baidu.com/docs#/TTS-API/top) (Chinese) for more information about the parameters.
+
+## Licenses
+
+| Name                         | Author(s)             | License                     |
+| :--------------------------- | :-------------------- | :-------------------------- |
+| tts.py                       | Christopher J. Howard | zlib License                |
+| MP3 files                    | Christopher J. Howard | CC0 1.0 Universal           |
+| CC-CEDICT                    | MDBG                  | CC BY-SA 3.0                |
+| Baidu RESTful API Python SDK | Baidu                 | Apache License, Version 2.0 |
